@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>main</title>
+        <style>
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background:radial-gradient(pink,lightblue);
+            }
+            center{
+                font-size:50px;
+                font-weight: bolder;
+                background-color: rgb(240, 255, 180);
+                width: auto;
+                border-radius: 11px;
+            }
+            marquee{
+                behavior: alternate;
+                direction: right;
+            }
+            #text input{
+                border-radius: 10px;
+            }
+            #text{
+                margin-left:40%;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <center>Health Care search</center>
+        <marquee direction="right" behavior="alternate" scrollamount="13"><h1>பயனரை வரவேற்கிறோம், விவரங்களைப் பெற கீழே தட்டச்சு செய்யவும்</h1></marquee>
+        <form id="text" name="passvalue" action="." method="POST">
+            <input type="text" name="nm" placeholder="Heart Attack"/>
+            <input type="submit" value="search" />
+        </form>
+        <h1>{{res}}</h1>
+
+    </body>
+</html>

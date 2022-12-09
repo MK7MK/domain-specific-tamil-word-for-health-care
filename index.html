@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <style>
+            body{
+                background-color: lightblue;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            h1{
+                margin-left: 32%;
+                width: fit-content;
+                background-color: lightcyan;
+                border-radius: 10px;
+                border-style: outset;
+            }
+            h2{
+                margin-left: 37%;
+                width: fit-content;
+                background-color: cornflowerblue;
+                border-radius: 10px;
+                border-style: outset;
+            }
+            center{
+                width: fit-content;
+                background-color:lightyellow;
+                border-radius: 10px;
+            }
+            h3{
+                margin-left: auto;
+                width: fit-content;
+                background-color:lightyellow;
+            }
+            ol{
+                float: left;
+                width: fit-content;
+                background-color:lightyellow;
+            }
+        </style>
+        <title>pass</title>
+    </head>
+    <body>
+        <h1>உங்களை வரவேற்கிறோம்</h1>
+        <h2>🌍உங்கள் தேடல் முடிவு🔎</h2>
+        <center>{{res}}</center>
+        <h3>{{res2}}</h3>
+        <h3>{{res3}}</h3>
+        <ol>
+        {% for i in res4 %}
+        <li>{{i}}</li>
+        {%endfor%}
+        
+        </ol>
+    </body>
+</html>
+
