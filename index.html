@@ -5,7 +5,7 @@
     <head>
         <style>
             body{
-                background-color: lightblue;
+                background-color: rgb(255, 255, 255);
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
             h1{
@@ -32,10 +32,44 @@
                 width: fit-content;
                 background-color:lightyellow;
             }
-            ol{
+            .cause p{
+                background-color: black;
+                color: white;
+                width: 30%;
                 float: left;
-                width: fit-content;
-                background-color:lightyellow;
+                height: 2cm;
+                border-radius: 100%;
+                text-align: center;
+            }
+            .symp p{
+                background-color: black;
+                color: white;
+                width: 30%;
+                float: left;
+                height: 2cm;
+                border-radius: 100%;
+                text-align: center;
+
+            }
+            .related p{
+                background-color: black;
+                color: white;
+                width: 30%;
+                float: left;
+                height: 2cm;
+                border-radius: 100%;
+                text-align: center;
+
+            }
+            .rel p{
+                background-color: black;
+                color: white;
+                width: 30%;
+                float: left;
+                height: 2cm;
+                border-radius: 100%;
+                text-align: center;
+                
             }
         </style>
         <title>pass</title>
@@ -44,14 +78,28 @@
         <h1>உங்களை வரவேற்கிறோம்</h1>
         <h2>🌍உங்கள் தேடல் முடிவு🔎</h2>
         <center>{{res}}</center>
-        <h3>{{res2}}</h3>
-        <h3>{{res3}}</h3>
-        <ol>
+        <br>
+        <div class="cause">
+            {% for i in res2 %}
+            <p>{{i}}</p>
+            {%endfor%}
+        </div>
+        <div class="symp">
+            {% for i in res3 %}
+            <p>{{i}}</p>
+            {%endfor%}
+        </div>
+
+        <div class="related">
         {% for i in res4 %}
-        <li>{{i}}</li>
+        <p>{{i}}</p>
         {%endfor%}
-        
-        </ol>
+        </div>
+        <div class="rel">
+        {% for i in rel %}
+        <p>{{i}}</p>
+        {%endfor%}
+        </div>
     </body>
 </html>
 
